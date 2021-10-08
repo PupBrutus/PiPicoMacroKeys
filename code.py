@@ -41,21 +41,21 @@ keyboard = Keyboard(usb_hid.devices)
 
 while True:
     if btn1.value:
-        keyboard.send(Keycode.CONTROL, Keycode.F7)
+        keyboard.send(Keycode.CONTROL, Keycode.SHIFT, Keycode.M) #Mute
         time.sleep(0.1)
     if btn2.value:
-        keyboard.send(Keycode.CONTROL, Keycode.F8)
+        keyboard.send(Keycode.CONTROL, Keycode.SHIFT, Keycode.O) #Toggle Video
         time.sleep(0.1)
     if btn3.value:
-        keyboard.send(Keycode.CONTROL, Keycode.F9)
+        keyboard.send(Keycode.CONTROL, Keycode.SHIFT, Keycode.A) #Accept Screen Share
         time.sleep(0.1)
     if btn4.value:
-        keyboard.send(Keycode.CONTROL, Keycode.F10)
+        keyboard.send(Keycode.CONTROL, Keycode.SHIFT, Keycode.A) #Accept Video Call
         time.sleep(0.1)
     if btn5.value:
-        keyboard.send(Keycode.CONTROL, Keycode.F11)
+        keyboard.send(Keycode.CONTROL, Keycode.SHIFT, Keycode.S) #Accept Audio Call
         time.sleep(0.1)
     if btn6.value:
-        keyboard.send(Keycode.CONTROL, Keycode.F12)
+        keyboard.send(Keycode.CONTROL, Keycode.SHIFT, Keycode.B) #Hang Up
         time.sleep(0.1)
     time.sleep(0.1)

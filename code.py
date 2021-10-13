@@ -41,21 +41,21 @@ keyboard = Keyboard(usb_hid.devices)
 
 while True:
     if btn1.value:
-        keyboard.send(Keycode.CONTROL, Keycode.SHIFT, Keycode.M) #Mute
+        keyboard.send(Keycode.CONTROL, Keycode.SHIFT, Keycode.M) #Toggle mute
         time.sleep(0.1)
     if btn2.value:
-        keyboard.send(Keycode.CONTROL, Keycode.SHIFT, Keycode.O) #Toggle Video
+        keyboard.send(Keycode.CONTROL, Keycode.SHIFT, Keycode.O) #Toggle video
         time.sleep(0.1)
     if btn3.value:
-        keyboard.send(Keycode.CONTROL, Keycode.SHIFT, Keycode.A) #Accept Screen Share
+        keyboard.send(Keycode.ALT, Keycode.SHIFT, Keycode.J) #Join meeting from outlook reminder
         time.sleep(0.1)
     if btn4.value:
-        keyboard.send(Keycode.CONTROL, Keycode.SHIFT, Keycode.A) #Accept Video Call
+        keyboard.send(Keycode.CONTROL, Keycode.SHIFT, Keycode.S) #Accept call with audio only
         time.sleep(0.1)
     if btn5.value:
-        keyboard.send(Keycode.CONTROL, Keycode.SHIFT, Keycode.S) #Accept Audio Call
+        keyboard.send(Keycode.CONTROL, Keycode.SHIFT, Keycode.A) #Accept call with audio/video
         time.sleep(0.1)
     if btn6.value:
-        keyboard.send(Keycode.CONTROL, Keycode.SHIFT, Keycode.B) #Hang Up
+        keyboard.send(Keycode.CONTROL, Keycode.SHIFT, Keycode.H) #Disconnect from call
         time.sleep(0.1)
     time.sleep(0.1)
